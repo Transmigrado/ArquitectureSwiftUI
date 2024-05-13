@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/
+!*.xcodeproj/project.pbxproj
+*.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+/*.playground
+xcuserdata/
+
+# Swift Package Manager
+.Package.resolved
+.checkouts
+.build
+
+# CocoaPods
+Pods/
+*.lock
+Manifest.lock
+
+# Carthage
+Carthage/Checkouts
+Carthage/Build
+
+# Compiled source
+*.rbc
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+
+# Generated files
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Misc
+*.log
+*.moved-aside
+*.xcuserstate
+*.xccheckout
+*.swiftpm
