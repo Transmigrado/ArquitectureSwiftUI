@@ -50,6 +50,8 @@
 		05970E6C2BF2A33500CCE8CB /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 05970E6B2BF2A33500CCE8CB /* FirebaseStorageCombine-Community */; };
 		05970E6E2BF2A33500CCE8CB /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 05970E6D2BF2A33500CCE8CB /* FirebaseVertexAI-Preview */; };
 		05970E762BF2AB5400CCE8CB /* PostThunksTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05970E752BF2AB5400CCE8CB /* PostThunksTest.swift */; };
+		05970E852BF2CA7800CCE8CB /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 05970E842BF2CA7800CCE8CB /* Mockingbird */; };
+		05970E872BF2CA8300CCE8CB /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 05970E862BF2CA8300CCE8CB /* Mockingbird */; };
 		05CB8DB22BF2670F00C30417 /* ArquitectureSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB8DB12BF2670F00C30417 /* ArquitectureSwiftUIApp.swift */; };
 		05CB8DB42BF2670F00C30417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB8DB32BF2670F00C30417 /* ContentView.swift */; };
 		05CB8DB62BF2671100C30417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05CB8DB52BF2671100C30417 /* Assets.xcassets */; };
@@ -121,6 +123,7 @@
 				05970E4E2BF2A33500CCE8CB /* FirebaseDynamicLinks in Frameworks */,
 				05970E482BF2A33500CCE8CB /* FirebaseCrashlytics in Frameworks */,
 				05970E602BF2A33500CCE8CB /* FirebaseMLModelDownloader in Frameworks */,
+				05970E852BF2CA7800CCE8CB /* Mockingbird in Frameworks */,
 				05970E4C2BF2A33500CCE8CB /* FirebaseDatabaseSwift in Frameworks */,
 				05970E502BF2A33500CCE8CB /* FirebaseFirestore in Frameworks */,
 				05970E5E2BF2A33500CCE8CB /* FirebaseInstallations in Frameworks */,
@@ -146,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05970E872BF2CA8300CCE8CB /* Mockingbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +400,7 @@
 				05970E692BF2A33500CCE8CB /* FirebaseStorage */,
 				05970E6B2BF2A33500CCE8CB /* FirebaseStorageCombine-Community */,
 				05970E6D2BF2A33500CCE8CB /* FirebaseVertexAI-Preview */,
+				05970E842BF2CA7800CCE8CB /* Mockingbird */,
 			);
 			productName = ArquitectureSwiftUI;
 			productReference = 05CB8DAE2BF2670F00C30417 /* ArquitectureSwiftUI.app */;
@@ -416,6 +421,7 @@
 			);
 			name = ArquitectureSwiftUITests;
 			packageProductDependencies = (
+				05970E862BF2CA8300CCE8CB /* Mockingbird */,
 			);
 			productName = ArquitectureSwiftUITests;
 			productReference = 05CB8DBE2BF2671200C30417 /* ArquitectureSwiftUITests.xctest */;
@@ -475,6 +481,7 @@
 				05CB8DDD2BF2680200C30417 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				05970E112BF26E5400CCE8CB /* XCRemoteSwiftPackageReference "ReSwift" */,
 				05970E272BF2728E00CCE8CB /* XCRemoteSwiftPackageReference "ReSwift-Thunk" */,
+				05970E832BF2CA7800CCE8CB /* XCRemoteSwiftPackageReference "mockingbird" */,
 			);
 			productRefGroup = 05CB8DAF2BF2670F00C30417 /* Products */;
 			projectDirPath = "";
@@ -883,6 +890,14 @@
 				minimumVersion = 2.0.1;
 			};
 		};
+		05970E832BF2CA7800CCE8CB /* XCRemoteSwiftPackageReference "mockingbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/birdrides/mockingbird";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.20.0;
+			};
+		};
 		05CB8DDD2BF2680200C30417 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1020,6 +1035,16 @@
 		05970E6D2BF2A33500CCE8CB /* FirebaseVertexAI-Preview */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "FirebaseVertexAI-Preview";
+		};
+		05970E842BF2CA7800CCE8CB /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05970E832BF2CA7800CCE8CB /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
+		};
+		05970E862BF2CA8300CCE8CB /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05970E832BF2CA7800CCE8CB /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

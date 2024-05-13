@@ -1,5 +1,5 @@
 {
-  "originHash" : "c71e9f9927ac1938faec741ec59ca23c0b05d2d0ed8d464fd4925c3402c5fd90",
+  "originHash" : "6b83756e8fe7783e2f9c61ba8399ae873976491c1ebb0531fdfb4197415f9b30",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -89,6 +89,15 @@
       "state" : {
         "revision" : "a0bc79961d7be727d258d33d5a6b2f1023270ba1",
         "version" : "1.22.5"
+      }
+    },
+    {
+      "identity" : "mockingbird",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/birdrides/mockingbird",
+      "state" : {
+        "revision" : "6e0d473df6b975719e145f6aebf90990c634700e",
+        "version" : "0.20.0"
       }
     },
     {
