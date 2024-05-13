@@ -43,3 +43,8 @@ Carthage/Build
 *.xcuserstate
 *.xccheckout
 *.swiftpm
+
+*.generated.swift
+
+# Caches
+**/*.xcodeproj/MockingbirdCache/
