@@ -6,9 +6,7 @@
 //
 
 import XCTest
-
-
-
+@testable import ArquitectureSwiftUI
 
 final class PostThunksTest: XCTestCase {
 
@@ -20,11 +18,12 @@ final class PostThunksTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testFetchThunk() throws {
-            // Given
-          
+    func testFetchThunk() async throws {
+        
+
+
      
-        }
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
@@ -34,3 +33,4 @@ final class PostThunksTest: XCTestCase {
     }
 
 }
+

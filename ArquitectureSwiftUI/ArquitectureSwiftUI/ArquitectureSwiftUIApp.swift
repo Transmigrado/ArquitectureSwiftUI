@@ -11,7 +11,6 @@ import ReSwift
 import ReSwiftThunk
 
 
-
 @main
 struct ArquitectureSwiftUIApp: App {
     

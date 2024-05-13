@@ -21,8 +21,9 @@ struct MainScreen: View {
             }
         }
         .onAppear{
-            let useCase =  RetrievePostsUseCase(db: Firestore.firestore())
-            store.dispatch(fetchThunk(useCase: useCase))
+            let useCase = RetrievePostsUseCase(db: Firestore.firestore())
+            let thunk = PostThunks(useCase: useCase)
+            store.dispatch(thunk.fetchThunk())
         }
     }
 }

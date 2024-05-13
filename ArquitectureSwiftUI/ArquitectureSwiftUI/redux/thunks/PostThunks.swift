@@ -10,19 +10,28 @@ import ReSwift
 import ReSwiftThunk
 import Firebase
 
-func fetchThunk(useCase: RetrievePostsUseCaseProtocol) -> Thunk<AppState>{
-    return Thunk<AppState> { dispatch, getState in
-        
-        dispatch(FetchAction())
-        
-        Task {
-            do {
-                let posts = try await useCase.fetchAsyncData()
-                dispatch(PostsAction(list: posts))
-            } catch {
-                print("Error fetching documents: \(error)")
+class PostThunks {
+    
+    var useCase: RetrievePostsUseCaseProtocol
+    
+    init(useCase: RetrievePostsUseCaseProtocol) {
+        self.useCase = useCase
+    }
+    
+    func fetchThunk() -> Thunk<AppState>{
+        return Thunk<AppState> { dispatch, getState in
+            
+            dispatch(FetchAction())
+            
+            Task {
+                do {
+                    let posts = try await self.useCase.fetchAsyncData()
+                    dispatch(PostsAction(list: posts))
+                } catch {
+                    print("Error fetching documents: \(error)")
+                }
             }
+            
         }
-        
     }
 }
