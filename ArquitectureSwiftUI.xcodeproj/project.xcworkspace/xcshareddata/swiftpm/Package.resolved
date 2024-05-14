@@ -1,5 +1,5 @@
 {
-  "originHash" : "6b83756e8fe7783e2f9c61ba8399ae873976491c1ebb0531fdfb4197415f9b30",
+  "originHash" : "f70c7c5479784501473c9d562f79e1a97f1403c07f4bfa801d0854aaab1be31b",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/app-check.git",
       "state" : {
-        "revision" : "7d2688de038d5484866d835acb47b379722d610e",
-        "version" : "10.19.0"
+        "revision" : "076b241a625e25eac22f8849be256dfb960fcdfe",
+        "version" : "10.19.1"
       }
     },
     {
@@ -92,15 +92,6 @@
       }
     },
     {
-      "identity" : "mockingbird",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/birdrides/mockingbird",
-      "state" : {
-        "revision" : "6e0d473df6b975719e145f6aebf90990c634700e",
-        "version" : "0.20.0"
-      }
-    },
-    {
       "identity" : "nanopb",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/nanopb.git",
@@ -143,6 +134,15 @@
       "state" : {
         "revision" : "9f0c76544701845ad98716f3f6a774a892152bcb",
         "version" : "1.26.0"
+      }
+    },
+    {
+      "identity" : "swiftmock",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mflint/SwiftMock",
+      "state" : {
+        "revision" : "9fedbfadb1e99837ef95aeb269bcdff09a429bfb",
+        "version" : "5.9.0"
       }
     }
   ],

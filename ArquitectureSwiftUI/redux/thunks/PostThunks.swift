@@ -18,7 +18,7 @@ class PostThunks {
         self.useCase = useCase
     }
     
-    func fetchThunk() -> Thunk<AppState>{
+    func fetchThunk() -> Thunk<AppState> {
         return Thunk<AppState> { dispatch, getState in
             
             dispatch(FetchAction())
@@ -26,6 +26,7 @@ class PostThunks {
             Task {
                 do {
                     let posts = try await self.useCase.fetchAsyncData()
+                    print("posts", posts)
                     dispatch(PostsAction(list: posts))
                 } catch {
                     print("Error fetching documents: \(error)")
